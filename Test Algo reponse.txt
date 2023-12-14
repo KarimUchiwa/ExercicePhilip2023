@@ -1,0 +1,67 @@
+Test Algo - Série 2
+Interrogation : Intro à l'Algorithmie
+Header :
+Je compilerai ici différents énoncés pour une interro pour des élèves ayant vu uniquement les conditions et les boucles, peu importe le langage.
+
+
+Body
+Théorie
+--------
+Répondez avec vos mots aux questions qui suivent dans un fichier texte, l'intégralité des réponses se trouve quelque part sur le site, mais je ne veux pas de copier/coller, je veux que vous me l'expliquiez avec vos mots :
+  Quelle est la différence entre la boucle while et la boucle do while ?
+La différence entre ces deux boucles. C'est que la Do while fera un tour de boucle même si on ne rentre pas dans la/les condition/s
+
+A quoi servent les mot continue et break dans une boucle ? Quelle sont leurs différences ?
+break=sortir de la boucle
+continue= pour passer un tour de boucle en fermant les yeux sur la condition 
+
+  A quoi sert l'HTML, le CSS et le PHP respectivement ?  Quels sont les principaux types de données ?
+l'HTML sert à placer les éléments d'un site sur la page web 
+Le Css permet de modifier l'aspect visuel du site. Le rendre plus beau.
+Le Php permet de faire les deux choses à fois et ajoute une certeine dynamique( on peut faire bouger des chose)
+
+Dans un programme, est-ce que je peux avoir un else tout seul, sans if avant ?
+Pourquoi ?
+oui s'il n'y a pas de if avant c'est définir une action par défaut
+
+  Que veux dire "Imbriquer les conditions" ?
+c'est emboiter les conditions 
+
+ Quel mot permet d'écrire quelque chose à l'écran ?  Comment déclarez-vous une variable ?
+-echo 
+-En ajoutant un dollars au début: $name
+
+ vrai && faux = ?
+
+ ( vrai || faux ) && vrai = ?  20%3 = ?
+
+ 5 % 100 = ?
+est égal à 5
+
+Algorithmie
+-----------
+Pour cette partie, il y a plusieurs manières de répondre, ce qui m'intéresse, c'est la transcription du problème en algorithme presque utilisable en code. Voici un
+
+exemple :
+Exemple d'énoncé : Ecrivez en français le raisonnement qui permettrait d'écrire un programme qui fait que quelqu'un prend 1 an chaque année jusqu'à ses 18ans., lors de ses 17 ans il reçoit un message lui disant qu'il sera bientôt adulte, aux autres anniversaires, il reçois un message qui lui dit qu'il n'es qu'un enfant.
+Exemple de résolution : Tant que quelqu'un a moins de 18ans je fais +1 à son âge. Si elle à 17ans, j'écris "l'année prochaine tu es adulte" sinon, j'écris "tu n'es qu'un enfant" !
+  Un compte à rebours démarre de 1 et va jusque 10 puis dit "Bon anniversaire !"
+
+J'utiliserais une boucle for par ce je sais combien de tours de boucle
+Je lui dmd son âge d'abord 
+il est directement catégorisé majeur ou mineur
+si majeur echo vous êtes majeur fin du programme (else=18)
+s'il est mineur on fait tourner la boucle en fesant un echo(if égal ou supérieur à 0/égal ou inférieur à 17) après chaque tour de boucle;
+A 17 ans on préviens qu'il sera bientôt majeur avec un echo
+arriver a 18 ans fin du programme
+
+
+Pratique
+--------
+Pour tous vos exercices, résolvez-les d'abord le plus simplement possible. Si vous avez le temps, améliorez l'expérience utilisateur avec des phrases et une présentation claire, ensuite commentez votre code et essayez de contrôler les entrées pour éviter tout bug d'un utilisateur malveillant ou stupide pour que le programme ne s'arrête pas lorsque qu'une entrée est mauvaise ! Vous n'avez droit qu'à ce qu'on a vu en classe en terme de notion, donc pas de fonction et pas de tableau !
+Ecrivez un programme PHP qui dit "Coucou"
+Ecrivez un programme PHP qui demande à l'utilisateur son âge. Si il a plus que entre 45 et 50 ans, dites à l'utilisateur qu'il est dans la fleur de l'âge !
+Demandez à l'utilisateur combien d'enfant il a. Si il n'en a pas, demandez lui à l'aide d'un menu en tapant sur 1, 2 ou 3 si c'est parce qu'il n'a pas de partenaire, si c'est parce qu'il n'en veut pas, ou si c'est parce qu'il ne peut pas en avoir.
+Inventez un petit message pour répondre à l'utilisateur dans chacun des cas. Dans tous les autres cas, félicitez le pour ses enfants.
+Implémentez le jeu du Morpion (Tic Tac Toe). Créez une grille 3x3 et permettez à deux joueurs de jouer tour à tour. Demandez à chaque joueur de saisir les coordonnées où il souhaite placer son symbole (X ou O). Utilisez des boucles imbriquées pour afficher la grille et vérifier si un joueur a gagné après chaque coup. Le jeu doit se poursuivre jusqu'à ce qu'il y ait un vainqueur ou un match nul.
+
